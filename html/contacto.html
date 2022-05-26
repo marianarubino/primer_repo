@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
+    <title>Contacto</title>
+</head>
+<body class="gridArea1">
+    <header>
+        <img class="logoheader" src="../imagenes/logo.png" alt="logo de la marca">
+        <h1>Elvira juguetes</h1>
+        <h2>Juguetes y accesorios para pequeños y no tan pequeños. Todo lo que imagines en tela!</h2>
+        <h3>Tu lugar para crear y disfrutar</h3>
+        <nav>
+            <ul>
+                <div>
+                    <li><a href="../index.html">inicio</a></li>
+                    <li><a href="juguetes.html">juguetes</a></li>
+                    <li><a href="mas pequenos.html">mas pequeños</a></li>
+                    <li><a href="decoracion.html">decoracion</a></li>
+                    <li><a href="contacto.html" target="_blank">contacto</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h3>dejanos tu consulta</h3>
+        <section class="posventa">
+            <h4>atencion al cliente venta y posventa</h4>
+            <p>Por cualquier duda relacionada a tu compra o para recibir asesoramiento antes de realizar tu pedido, escribinos a ventas@elvirajuguetes.com.ar</p>
+        </section>
+        <section class="marketing">
+            <h4>marketing y acciones comerciales</h4>
+            <p>Si querés acercarnos una propuesta comercial o promocionar nuestros productos, escribinos a marketing@elvirajuguetes.com.ar :</p>
+        </section>
+            <fieldset>
+                <legend>Formulario de contacto</legend>
+                <p>Si tenes otras dudas o consultas:</p>
+                <form action="" method="get" enctype="text/plain">
+                    <label for="username">Nombre</label>
+                    <input type="text" name="username" id="username">
+                    <label for="useremail">Email</label>
+                    <input type="email" name="useremail" id="useremail" required> 
+                    <label for="userphone">Celular</label>
+                    <input type="number" name="userphone" id="userphone">
+                </form>
+                <div>
+                    <p>Quisiera saber mas info de:
+                    <form action="" method="get" enctype="text/plain">
+                        <select name="Producto" id="userproduct">
+                            <option value="Eleccion" disabled selected>seleccionar producto</option>
+                            <option value="Mas pequeños">Mas pequeños</option>
+                            <option value="Juguetes">Juguetes</option>
+                            <option value="Deco">decoracion</option>
+                        </select>
+                    </form> </p>
+                </div>
+                <div>
+                    <label for="usertext">Podes dejarnos tu consulta aquí:</label>
+                    <textarea name="usertext" id="usertext" cols="30" rows="10"></textarea>
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+            </fieldset>
+        </section>
+    </main>
+    <footer>
+        <img class="logoFooter" src="../imagenes/logo.png" alt="logo de elvira juguetes">
+        <p>Elvira juguetes. todos los derechos reservados.</p>
+        <p>Mariana Rubino</p>
+        <p>diseno web coderhouse 2022</p>
+    </footer>
+</body>
+</html>
