@@ -26,7 +26,7 @@ h1 {
     font: size 80%;
 }
 nav{
-    background-color: #c2185c36;
+    background-color: #c2185c2f;
     text-align: center;
     padding-top: 5%;
     padding-bottom: 5%;        
@@ -37,7 +37,10 @@ li{
     padding-left: 10px;
     padding-right: 10px;
 }
-nav ul div {background-color:#F8BBD0;}
+nav ul div {background-color:rgba(238, 174, 202, 0.281);}
+
+.header-background {background-image: radial-gradient(circle, rgba(229,149,242,0.9514399509803921) 0%, rgba(238,174,202,1) 46%, rgba(242,78,224,1) 100%);}
+
 main{background-color: #F8BBD0;}
 .novedadesImg{
     width: 300px;
@@ -130,8 +133,7 @@ footer p {
 
 @media screen and (max-width: 768px){
     footer p {background-color: greenyellow; }
-    .headerIntro h2 { 
-        display:none;}   
+    .headerIntro h2 { display:none;}   
 }
     
   /*version celu*/
