@@ -16,7 +16,8 @@
         <h1>Elvira juguetes</h1>
         <h2>Juguetes y accesorios para pequeños y no tan pequeños. Todo lo que imagines en tela!</h2>
         <h3>Tu lugar para crear y disfrutar</h3>
-        <nav>
+       
+        <nav class="headerNav">
             <ul>
                 <div>
                     <li><a href="../index.html">inicio</a></li>
@@ -38,36 +39,34 @@
             <h4>marketing y acciones comerciales</h4>
             <p>Si querés acercarnos una propuesta comercial o promocionar nuestros productos, escribinos a marketing@elvirajuguetes.com.ar :</p>
         </section>
-            <fieldset>
-                <legend>Formulario de contacto</legend>
-                <p>Si tenes otras dudas o consultas:</p>
-                <form action="" method="get" enctype="text/plain">
-                    <label for="username">Nombre</label>
-                    <input type="text" name="username" id="username">
-                    <label for="useremail">Email</label>
-                    <input type="email" name="useremail" id="useremail" required> 
-                    <label for="userphone">Celular</label>
-                    <input type="number" name="userphone" id="userphone">
-                </form>
-                <div>
-                    <p>Quisiera saber mas info de:
-                    <form action="" method="get" enctype="text/plain">
-                        <select name="Producto" id="userproduct">
-                            <option value="Eleccion" disabled selected>seleccionar producto</option>
-                            <option value="Mas pequeños">Mas pequeños</option>
-                            <option value="Juguetes">Juguetes</option>
-                            <option value="Deco">decoracion</option>
-                        </select>
-                    </form> </p>
-                </div>
-                <div>
-                    <label for="usertext">Podes dejarnos tu consulta aquí:</label>
-                    <textarea name="usertext" id="usertext" cols="30" rows="10"></textarea>
-                    <input type="submit" value="Enviar">
-                </div>
+        <fieldset>
+            <legend class="contacto-padding" >Formulario de contacto</legend>
+            <p class="contacto-padding" >Si tenes otras dudas o consultas:</p>
+            <form action="" method="get" enctype="text/plain" class="contacto-padding" >
+                <label for="username">Nombre</label>
+                <input type="text" name="username" id="username">
+                <label for="useremail">Email</label>
+                <input type="email" name="useremail" id="useremail" required> 
+                <label for="userphone">Celular</label>
+                <input type="number" name="userphone" id="userphone">
             </form>
-            </fieldset>
-        </section>
+            <div class="contacto-padding" class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect01">Quisiera saber mas info de:</label>
+                <select class="form-select" id="inputGroupSelect01">
+                  <option selected>Seleccionar producto</option>
+                  <option value="1">Mas pequeños</option>
+                  <option value="2">Juguetes</option>
+                  <option value="3">Decoracion</option>
+                </select>
+            </div>
+           
+            <div class="contacto-padding" class="input-group">
+                <span class="input-group-text">Podes dejarnos tu consulta aquí:</span>
+                <textarea class="form-control" aria-label="With textarea"></textarea>
+                <input type="submit" value="Enviar">
+            </div>
+        </fieldset>
+        
     </main>
     <footer>
         <img class="logoFooter" src="../imagenes/logo.png" alt="logo de elvira juguetes">
