@@ -25,6 +25,10 @@ h1 {
     font-style: italic;
     font: size 80%;
 }
+.container-fluid{background-color: #e27faf; justify-content: flex-end;
+    
+     }
+.navbar{padding: 10px;background-color: #e27faf;}
 nav{
     background-color: #c2185c2f;
     text-align: center;
@@ -129,6 +133,9 @@ footer p {
     grid-area: seguinos;
     display: inline-block
 }
+.contacto-padding{
+    padding: 10px;
+}
 
 /*Mis @media ESTA HECHA LA VERSION DESKTOP
     TENGO QUE HACER LA VERSION TABLET Y MOBILE */
@@ -143,7 +150,7 @@ footer p {
     
   /*version celu*/
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 400px){
     .gridArea1 {font-size: 20%;}
     .logoheader {justify-items: center;}
     .headerIntro h1, .headerIntro h2, .headerIntro h3 { display:none;}
