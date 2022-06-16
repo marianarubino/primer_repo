@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -145,6 +146,34 @@ main {
     justify-content: center; }
   .carrousel, .maps {
     display: none; } }
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.tarjetaContacto, .textoTarjetaRed, .textoTarjetaWhite, .textoTarjetaYellow {
+  margin: 15px;
+  padding: 10px;
+  width: 300px;
+  height: 250px; }
+
+.textoTarjetaRed {
+  color: red; }
+
+.textoTarjetaWhite {
+  color: white; }
+
+.textoTarjetaYellow {
+  color: yellowgreen; }
+
+.letraPequeña {
+  font-size: 10px;
+  font-weight: 10px; }
+
+.letraGrande {
+  font-size: 20px;
+  font-weight: 30px; }
 
 footer {
   background-color: #F8BBD0;

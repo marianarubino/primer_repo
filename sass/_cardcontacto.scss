@@ -1,0 +1,35 @@
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tarjetaContacto{
+    margin: 15px;
+    padding: 10px;
+    width: 300px;
+    height: 250px;
+}
+
+.textoTarjetaRed{
+    @extend .tarjetaContacto;
+    color: red;
+}
+.textoTarjetaWhite{
+    @extend .tarjetaContacto;
+    color: white;
+    
+}
+.textoTarjetaYellow{
+    @extend .tarjetaContacto;
+    color: yellowgreen;
+           
+}
+@mixin fontsize($size,$weight){
+    font-size: $size;
+    font-weight: $weight;
+}
+.letraPequeña{
+    @include fontsize(10px,10px)}
+.letraGrande{  
+    @include fontsize(20px,30px)}
+ 
