@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/main.css">
     <title>Contacto</title>
+    <meta name="description" content="Elvira juguetes, envianos tu pedido o consulta.">
+    <meta name="keywords" content=" contacto, pedidos, zona norte, consulta,email.">
 </head>
 <body class="gridArea1">
     <header class="header-background">
@@ -16,7 +18,8 @@
         <h1>Elvira juguetes</h1>
         <h2>Juguetes y accesorios para pequeños y no tan pequeños. Todo lo que imagines en tela!</h2>
         <h3>Tu lugar para crear y disfrutar</h3>
-        <nav>
+       
+        <nav class="headerNav">
             <ul>
                 <div>
                     <li><a href="../index.html">inicio</a></li>
@@ -29,45 +32,55 @@
         </nav>
     </header>
     <main>
-        <h3>dejanos tu consulta</h3>
         <section class="posventa">
-            <h4>atencion al cliente venta y posventa</h4>
+            <h4 class="letraGrande">atencion al cliente venta y posventa</h4>
             <p>Por cualquier duda relacionada a tu compra o para recibir asesoramiento antes de realizar tu pedido, escribinos a ventas@elvirajuguetes.com.ar</p>
         </section>
         <section class="marketing">
-            <h4>marketing y acciones comerciales</h4>
-            <p>Si querés acercarnos una propuesta comercial o promocionar nuestros productos, escribinos a marketing@elvirajuguetes.com.ar :</p>
+            <h4 class="letraGrande">marketing y acciones comerciales</h4>
+            <p>Si querés acercarnos una propuesta comercial o promocionar nuestros productos, escribinos a marketing@elvirajuguetes.com.ar</p>
         </section>
-            <fieldset>
-                <legend>Formulario de contacto</legend>
-                <p>Si tenes otras dudas o consultas:</p>
-                <form action="" method="get" enctype="text/plain">
-                    <label for="username">Nombre</label>
-                    <input type="text" name="username" id="username">
-                    <label for="useremail">Email</label>
-                    <input type="email" name="useremail" id="useremail" required> 
-                    <label for="userphone">Celular</label>
-                    <input type="number" name="userphone" id="userphone">
-                </form>
-                <div>
-                    <p>Quisiera saber mas info de:
-                    <form action="" method="get" enctype="text/plain">
-                        <select name="Producto" id="userproduct">
-                            <option value="Eleccion" disabled selected>seleccionar producto</option>
-                            <option value="Mas pequeños">Mas pequeños</option>
-                            <option value="Juguetes">Juguetes</option>
-                            <option value="Deco">decoracion</option>
-                        </select>
-                    </form> </p>
-                </div>
-                <div>
-                    <label for="usertext">Podes dejarnos tu consulta aquí:</label>
-                    <textarea name="usertext" id="usertext" cols="30" rows="10"></textarea>
-                    <input type="submit" value="Enviar">
-                </div>
+        <fieldset>
+            <legend class="contacto-padding" >Formulario de contacto</legend>
+            <p class="contacto-padding" >Si tenes otras dudas o consultas:</p>
+            <form action="" method="get" enctype="text/plain" class="contacto-padding" >
+                <label for="username">Nombre</label>
+                <input type="text" name="username" id="username">
+                <label for="useremail">Email</label>
+                <input type="email" name="useremail" id="useremail" required> 
+                <label for="userphone">Celular</label>
+                <input type="number" name="userphone" id="userphone">
             </form>
-            </fieldset>
-        </section>
+            <div class="contacto-padding" class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect01">Quisiera saber mas info de:</label>
+                <select class="form-select" id="inputGroupSelect01">
+                  <option selected>Seleccionar producto</option>
+                  <option value="1">Mas pequeños</option>
+                  <option value="2">Juguetes</option>
+                  <option value="3">Decoracion</option>
+                </select>
+            </div>
+           
+            <div class="contacto-padding" class="input-group">
+                <span class="input-group-text">Podes dejarnos tu consulta aquí:</span>
+                <textarea class="form-control" aria-label="With textarea"></textarea>
+                <input type="submit" value="Enviar">
+            </div>
+        </fieldset>
+        <div class="cards">
+            <div class="card-text tarjetaContacto">
+                <img src="../imagenes/deco/iloveimg-resized/colchoneta.jpg" alt="imagen de colchoneta puf rosa">
+                <p class="textoTarjetaRed">Colchoneta puf ! Reservala para tener la tuya! (Disponibles proximamente en distintos colores y modelos)</p>   
+            </div>
+            <div class="card-text tarjetaContacto">
+                <img src="../imagenes/deco/iloveimg-resized/fundas.jpeg" alt="imagen de fundas tejidas para portaobjetos">
+                <p class="textoTarjetaWhite letraPequeña">Llegaron las fundas tejidas con motivos animalitos. Bordados a mano,con lana de algodon 100% hipoalergénica y extensibles. Hermosas para decorar un escritorio! Que estas esperando para tener la tuya?</p>   
+            </div>
+            <div class="card-text tarjetaContacto">
+                <img src="../imagenes/deco/iloveimg-resized/deco-variedad.jpg" alt="imagen de diseños realizados en distintas telas. ">
+                <p class="textoTarjetaYellow letraGrande">Manta/alfombra tejida. Almohadones pelota tejida o ballena. Lo queres? Podes contactarte con nosotros al Whatsapp ! </p>   
+            </div>
+        </div>
     </main>
     <footer>
         <img class="logoFooter" src="../imagenes/logo.png" alt="logo de elvira juguetes">

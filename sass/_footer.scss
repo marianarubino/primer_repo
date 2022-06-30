@@ -1,0 +1,29 @@
+footer {
+    background-color: $colorfondo2;
+    height: 100px;
+    text-align: center;
+    .logoFooter{
+        inline-size: 10%;
+        margin-top: 10px;
+    }
+    p{
+        display: inline;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+        }
+/*version tablet*/
+
+   @media screen and (max-width: 768px){
+    footer {background-image: radial-gradient(circle, rgba(229,149,242,0.9514399509803921) 0%, rgba(238,174,202,1) 46%, rgba(242,78,224,1) 100%);}
+    footer p {background-color: greenyellow; }}
+
+ /*version celu*/
+ @media screen and (max-width: 425px){
+    .logoFooter {display:none} 
+    footer p {
+        display:flex;
+        flex-direction: row;
+        background-color: red; }    
+    
+ }

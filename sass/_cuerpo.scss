@@ -1,0 +1,87 @@
+main{background-color: $colorfondo2;}
+
+
+
+.novedadesImg{
+    width: 300px;
+    height: 250px;
+    padding-left: 8px;
+    padding-bottom: 15px;}
+
+.maps {
+    width: 350px;
+    height: 200px;
+}
+.producto{
+    display: inline-block;
+}
+
+.productoJugueteConejo,.productoJugueteEncastre,.productoJugueteDomino {
+    width: $anchofotoproducto;
+    height: 200px;}
+ 
+
+.productoBaberoNordico1,.productoSonajeroCaballo, .productoSonajeroMadera, .productoSouvenir2, .productoDeco1 {
+    width: $anchofotoproducto;
+    height: 200px;}
+
+.logoInstagram {
+    width: 40px;
+    height: 50px;
+    text-align: end;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.logoFacebook{
+    width: 40px;
+    height: 50px;
+    text-align: end;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+.posventa,.marketing{
+    display: inline-block;
+    padding: 20px;
+    margin-top: 5px;
+    background-color: #c2185c36;
+}
+
+#gridArea{ 
+    background-color:$colorfondo;
+    display: grid;
+    grid-template-areas:
+    "carrousel carrousel"
+    "novedades seguinos"
+    "novedades seguinos";
+    grid-template-rows:"auto 20% 20%";
+    grid-template-columns: "50% 50%";
+    place-items: center;
+} 
+.carrousel{
+    grid-area: carrousel;
+    border: 2px rgb(240, 8, 240) solid;
+}
+.novedades{
+    grid-area: novedades;
+    display: inline-block;
+    justify-content: center;
+}
+.seguinos{
+    grid-area: seguinos;
+    display: inline-block
+}
+.contacto-padding{
+    padding: 10px;
+}
+
+
+/*version celu*/
+@media screen and (max-width: 425px){
+    
+ #gridArea {display:block;
+            flex-direction: column;
+            justify-content: center}   
+               
+            .carrousel, .maps {display: none;} 
+}

@@ -7,6 +7,7 @@
     list-style: none;
     text-decoration: none;
 }
+                                                /* encabezado*/
 .gridArea1{
     display: grid;
     grid-template-rows: auto 1fr auto;
@@ -25,6 +26,10 @@ h1 {
     font-style: italic;
     font: size 80%;
 }
+.container-fluid{background-color: #e27faf; justify-content: flex-end;
+    
+     }
+.navbar{padding: 10px;background-color: #e27faf;}
 nav{
     background-color: #c2185c2f;
     text-align: center;
@@ -43,13 +48,16 @@ nav ul div {background-color:rgba(238, 174, 202, 0.281);}
 
 .header-background {background-image: radial-gradient(circle, rgba(229,149,242,0.9514399509803921) 0%, rgba(238,174,202,1) 46%, rgba(242,78,224,1) 100%);}
 
+                                                    /* main*/
 main{background-color: #F8BBD0;}
 
 
 
 .novedadesImg{
     width: 300px;
-    height: 250px;}
+    height: 250px;
+    padding-left: 8px;
+    padding-bottom: 15px;}
 
 .maps {
     width: 350px;
@@ -90,21 +98,6 @@ main{background-color: #F8BBD0;}
     background-color: #c2185c36;
 }
 
-footer {
-    background-color: #F8BBD0;
-    height: 100px;
-    text-align: center;
-}
-footer p {
-    display: inline;
-    margin: 10px;
-}
-
-.logoFooter{
-    inline-size: 10%;
-    margin-top: 10px;
-}
-
 #gridArea{ 
     background-color:#e27faf;
     display: grid;
@@ -129,8 +122,26 @@ footer p {
     grid-area: seguinos;
     display: inline-block
 }
+.contacto-padding{
+    padding: 10px;
+}
+                                            /* footer*/
+footer {
+    background-color: #F8BBD0;
+    height: 100px;
+    text-align: center;
+}
+footer p {
+    display: inline;
+    margin: 10px;
+}
 
-/*Mis @media ESTA HECHA LA VERSION DESKTOP
+.logoFooter{
+    inline-size: 10%;
+    margin-top: 10px;
+}
+
+                                /*Mis @media ESTA HECHA LA VERSION DESKTOP
     TENGO QUE HACER LA VERSION TABLET Y MOBILE */
 
     /*version tablet*/
@@ -143,9 +154,10 @@ footer p {
     
   /*version celu*/
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 425px){
     .gridArea1 {font-size: 20%;}
     .logoheader {justify-items: center;}
+    .logoheaderinicio {padding: 8px;}
     .headerIntro h1, .headerIntro h2, .headerIntro h3 { display:none;}
     
     .headerNav div {display: flex;
