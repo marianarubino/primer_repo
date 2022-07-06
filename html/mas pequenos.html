@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
@@ -13,22 +14,44 @@
     <meta name="keywords" content="baberos,toalla, hipoalergenicos, ropa, sweater, chalecos, hecho a mano, atoxicos, peluches, sonajeros.">
 </head>
 <body class="gridArea1">
+<!--header-->
     <header class="header-background">
         <img class="logoheader" src="../imagenes/logo-sin-fondo.png" alt="logo de la marca">
         <h1>Elvira juguetes</h1>
         <h3>Tu lugar para crear y disfrutar!</h3>
-        <nav>
-            <ul>
-                <div>
-                    <li><a href="../index.html">inicio</a></li>
-                    <li><a href="juguetes.html">juguetes</a></li>
-                    <li><a href="mas pequenos.html">mas pequeños</a></li>
-                    <li><a href="decoracion.html">decoración</a></li>
-                    <li><a href="contacto.html">contacto</a></li>
-                </div>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-sm">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Productos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="juguetes.html">Juguetes</a></li>
+                      <li><a class="dropdown-item" href="mas pequenos.html">Mas pequeños</a></li>
+                      <li><a class="dropdown-item" href="decoracion.html">Decoración</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-pink-300" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
     </header>
+<!--main-->
     <main>
         <h3> Para los mas peques todas las opciones disponibles ! podés encargarnos el que quieras o agregar al carrito el modelo que mas te guste. Acordate que podés modificar los colores decorativos realizando tu pedido desde la sección Contacto !! </h3>
         <section class="producto">
@@ -44,11 +67,14 @@
             <img class="productoSouvenir2" src="../imagenes/souvenirs2.jpeg" alt="souvenirs niña caballo rosa">
         </section>
     </main>
+<!--footer-->
     <footer>
         <img class="logoFooter"  src="../imagenes/logo.png" alt="logo de elvira juguetes">
         <p>Elvira juguetes. todos los derechos reservados.</p>
         <p>Mariana Rubino</p>
         <p>diseno web coderhouse 2022</p>
-    </footer>    
+    </footer>  
+<!-- java de Bs-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>  
 </body>
 </html>

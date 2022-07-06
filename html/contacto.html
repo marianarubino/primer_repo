@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
@@ -13,36 +14,82 @@
     <meta name="keywords" content=" contacto, pedidos, zona norte, consulta,email.">
 </head>
 <body class="gridArea1">
+<!--header-->
     <header class="header-background">
         <img class="logoheader" src="../imagenes/logo.png" alt="logo de la marca">
         <h1>Elvira juguetes</h1>
         <h2>Juguetes y accesorios para pequeños y no tan pequeños. Todo lo que imagines en tela!</h2>
         <h3>Tu lugar para crear y disfrutar</h3>
-       
-        <nav class="headerNav">
-            <ul>
-                <div>
-                    <li><a href="../index.html">inicio</a></li>
-                    <li><a href="juguetes.html">juguetes</a></li>
-                    <li><a href="mas pequenos.html">mas pequeños</a></li>
-                    <li><a href="decoracion.html">decoracion</a></li>
-                    <li><a href="contacto.html">contacto</a></li>
+        <div>
+            <nav class="navbar navbar-expand-sm">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link active" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Productos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="./juguetes.html">Juguetes</a></li>
+                            <li><a class="dropdown-item" href="./mas pequenos.html">Mas pequeños</a></li>
+                            <li><a class="dropdown-item" href="./decoracion.html">Decoración</a></li>
+                        </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-pink-300" type="submit">Buscar</button>
+                    </form>
+                    </div>
                 </div>
-            </ul>
-        </nav>
+            </nav>
+        </div>        
     </header>
+<!--main-->
     <main>
-        <section class="posventa">
-            <h4 class="letraGrande">atencion al cliente venta y posventa</h4>
-            <p>Por cualquier duda relacionada a tu compra o para recibir asesoramiento antes de realizar tu pedido, escribinos a ventas@elvirajuguetes.com.ar</p>
+<!--form accordion-->
+        <section class="section-contacto">    
+            <div class="accordion accordion-flush" id="accordionExample">
+                <div class="accordion-item section-contacto">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Atención al cliente, venta y posventa.
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                    Por cualquier duda relacionada a tu compra o para recibir asesoramiento antes de realizar tu pedido, escribinos a <strong>ventas@elvirajuguetes.com.ar</strong>
+                    </div>
+                </div>
+                </div>
+                <div class="accordion-item section-contacto">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Marketing y acciones comerciales.
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                    Si querés acercarnos una propuesta comercial o promocionar nuestros productos escribinos a <strong>marketing@elvirajuguetes.com.ar</strong>
+                    </div>
+                </div>
+                </div>
+            </div>
         </section>
-        <section class="marketing">
-            <h4 class="letraGrande">marketing y acciones comerciales</h4>
-            <p>Si querés acercarnos una propuesta comercial o promocionar nuestros productos, escribinos a marketing@elvirajuguetes.com.ar</p>
-        </section>
+<!--formulario contacto-->
         <fieldset>
-            <legend class="contacto-padding" >Formulario de contacto</legend>
-            <p class="contacto-padding" >Si tenes otras dudas o consultas:</p>
+            <legend class="contacto-padding" ></legend>
+            <p class="contacto-padding" ></p>Si tenes otras dudas o consultas, podés enviarnos un Whatsapp al +5491168500080 o enviarnos tu consulta:</p>
+            <p class="contacto-padding" >Formulario de contacto</p>
             <form action="" method="get" enctype="text/plain" class="contacto-padding" >
                 <label for="username">Nombre</label>
                 <input type="text" name="username" id="username">
@@ -59,34 +106,23 @@
                   <option value="2">Juguetes</option>
                   <option value="3">Decoracion</option>
                 </select>
-            </div>
-           
+            </div> 
             <div class="contacto-padding" class="input-group">
                 <span class="input-group-text">Podes dejarnos tu consulta aquí:</span>
                 <textarea class="form-control" aria-label="With textarea"></textarea>
                 <input type="submit" value="Enviar">
             </div>
         </fieldset>
-        <div class="cards">
-            <div class="card-text tarjetaContacto">
-                <img src="../imagenes/deco/iloveimg-resized/colchoneta.jpg" alt="imagen de colchoneta puf rosa">
-                <p class="textoTarjetaRed">Colchoneta puf ! Reservala para tener la tuya! (Disponibles proximamente en distintos colores y modelos)</p>   
-            </div>
-            <div class="card-text tarjetaContacto">
-                <img src="../imagenes/deco/iloveimg-resized/fundas.jpeg" alt="imagen de fundas tejidas para portaobjetos">
-                <p class="textoTarjetaWhite letraPequeña">Llegaron las fundas tejidas con motivos animalitos. Bordados a mano,con lana de algodon 100% hipoalergénica y extensibles. Hermosas para decorar un escritorio! Que estas esperando para tener la tuya?</p>   
-            </div>
-            <div class="card-text tarjetaContacto">
-                <img src="../imagenes/deco/iloveimg-resized/deco-variedad.jpg" alt="imagen de diseños realizados en distintas telas. ">
-                <p class="textoTarjetaYellow letraGrande">Manta/alfombra tejida. Almohadones pelota tejida o ballena. Lo queres? Podes contactarte con nosotros al Whatsapp ! </p>   
-            </div>
-        </div>
     </main>
+<!--footer-->
     <footer>
         <img class="logoFooter" src="../imagenes/logo.png" alt="logo de elvira juguetes">
         <p>Elvira juguetes. todos los derechos reservados.</p>
         <p>Mariana Rubino</p>
         <p>diseno web coderhouse 2022</p>
     </footer>
+<!-- java de Bs-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
 </body>
 </html>

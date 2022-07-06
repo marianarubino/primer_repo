@@ -21,36 +21,60 @@
             <h1>Bienvenidos a Elvira juguetes</h1>
             <h2>Juguetes y accesorios para pequeños y no tan pequeños. Todo lo que imagines en tela!</h2>
         </div>
-        <nav class="navbar">
+        
+        <nav class="navbar navbar-expand-sm">
             <div class="container-fluid">
-              <a class="navbar-brand">Tu lugar para crear y disfrutar</a>
-              <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-pink-200" type="submit">Buscar</button>
-              </form>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="./html/contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Productos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="./html/juguetes.html">Juguetes</a></li>
+                      <li><a class="dropdown-item" href="./html/mas pequenos.html">Mas pequeños</a></li>
+                      <li><a class="dropdown-item" href="./html/decoracion.html">Decoración</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-pink-300" type="submit">Buscar</button>
+                </form>
+              </div>
             </div>
-        </nav>
-
-        <nav class="headerNav">
-            <ul>
-                <div>
-                    <li><a href="index.html">inicio</a></li>
-                    <li><a href="./html/juguetes.html">juguetes</a></li>
-                    <li><a href="./html/mas pequenos.html">mas pequenos</a></li>
-                    <li><a href="./html/decoracion.html">decoracion</a></li>
-                    <li><a href="./html/contacto.html">contacto</a></li>
-                </div>
-            </ul>
-        </nav>
+        </nav>    
     </header>
-<!--main/cuerpo-->
+<!--main-->
     <main>
+<!--carrousel-->
         <div id="gridArea" class="gridAreaMain">
             <section class="carrousel">
-                <div class="container">
-                    <p>carrousel de imagenes</p>
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./imagenes/babero nordico2.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imagenes/sonajero tortuga.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imagenes/souvenirs3.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
                 </div>
             </section>
+        
+<!--novedades/seguinos-->
             <section class="novedades">
                 <p>llegaron los guardapijamas !! </p>
                 <img class="novedadesImg" src="./imagenes/sonajeros-guardapijama.jpeg" alt="imagen de nuevo diseno guardapijama">
@@ -63,8 +87,7 @@
                 <a href="https://www.facebook.com/Elvira-Bebes-y-chicos-105351957503368" target="_blank"><img class="logoFacebook" src="./imagenes/logo facebook.png" alt="enlace a facebook de elvira juguetes"></a>
             </section>
         </div>
-    </main>
-    
+    </main>  
 
 <!--footer-->
    <footer>

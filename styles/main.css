@@ -16,8 +16,8 @@ body {
 header {
   padding-top: 5%;
   padding-bottom: 5%;
-  background-color: #F8BBD0;
-  background-image: radial-gradient(circle, rgba(229, 149, 242, 0.95144) 0%, #eeaeca 46%, #f24ee0 100%); }
+  background-color: #abebe694;
+  background-image: radial-gradient(circle, #abebc2 73%, rgba(159, 215, 179, 0.815586) 100%); }
 
 img {
   inline-size: 100px; }
@@ -26,28 +26,8 @@ h1 {
   font-style: italic;
   font: size 80%; }
 
-.navbar {
-  padding: 10px;
-  background-color: #e27faf; }
-  .navbar .container-fluid {
-    background-color: #e27faf;
-    justify-content: flex-end; }
-
-.headerNav {
-  background-color: #c2185c2f;
-  text-align: center;
-  padding-top: 5%;
-  padding-bottom: 5%; }
-  .headerNav div {
-    background-color: #eeaeca48; }
-  .headerNav li {
-    display: inline;
-    font-size: 150%;
-    padding-left: 10px;
-    padding-right: 10px;
-    transition: all, 1s; }
-    .headerNav li:hover {
-      background-color: #F8BBD0; }
+Nav {
+  background-color: #abebe694; }
 
 /*version tablet*/
 @media screen and (max-width: 768px) {
@@ -71,7 +51,7 @@ h1 {
     font-size: 20%; } }
 
 main {
-  background-color: #F8BBD0; }
+  background-color: #abebe694; }
 
 .novedadesImg {
   width: 300px;
@@ -115,7 +95,7 @@ main {
   background-color: #c2185c36; }
 
 #gridArea {
-  background-color: #e27faf;
+  background-color: #abebc284;
   display: grid;
   grid-template-areas: "carrousel carrousel" "novedades seguinos" "novedades seguinos";
   grid-template-rows: "auto 20% 20%";
@@ -123,8 +103,7 @@ main {
   place-items: center; }
 
 .carrousel {
-  grid-area: carrousel;
-  border: 2px #f008f0 solid; }
+  grid-area: carrousel; }
 
 .novedades {
   grid-area: novedades;
@@ -137,6 +116,9 @@ main {
 
 .contacto-padding {
   padding: 10px; }
+
+.section-contacto, fieldset {
+  background-color: #abebc284; }
 
 /*version celu*/
 @media screen and (max-width: 425px) {
@@ -175,7 +157,7 @@ main {
   font-weight: 30px; }
 
 footer {
-  background-color: #F8BBD0;
+  background-color: #abebc284;
   height: 100px;
   text-align: center; }
   footer .logoFooter {
@@ -187,17 +169,10 @@ footer {
     margin-right: 10px; }
 
 /*version tablet*/
-@media screen and (max-width: 768px) {
-  footer {
-    background-image: radial-gradient(circle, rgba(229, 149, 242, 0.95144) 0%, #eeaeca 46%, #f24ee0 100%); }
-  footer p {
-    background-color: greenyellow; } }
-
 /*version celu*/
 @media screen and (max-width: 425px) {
   .logoFooter {
     display: none; }
   footer p {
     display: flex;
-    flex-direction: row;
-    background-color: red; } }
+    flex-direction: row; } }

@@ -10,38 +10,16 @@ header{
     padding-top: 5%;
     padding-bottom: 5%;
     background-color:$colorfondo2;
-    background-image: radial-gradient(circle, rgba(229,149,242,0.9514399509803921) 0%, rgba(238,174,202,1) 46%, rgba(242,78,224,1) 100%);}
+    background-image: radial-gradient(circle,rgba(171,235,194,1) 73%, rgba(159,215,179,0.8155856092436975) 100%);}
         img{
             inline-size: 100px;}
         h1 {
             font-style: italic;
             font: size 80%;}
 
-    .navbar{
-        padding: 10px;
-        background-color: $colorfondo;
-        .container-fluid {
-            background-color: $colorfondo;
-            justify-content: flex-end;
-    }}
+Nav{ background-color: $colorfondo2;}
 
-    .headerNav{
-        background-color: #c2185c2f;
-        text-align: center;
-        padding-top: 5%;
-        padding-bottom: 5%;  
-        div {background-color:#eeaeca48;}      
-            li{
-                display: inline;
-                font-size: 150%;
-                padding-left: 10px;
-                padding-right: 10px;
-                transition: all, 1s;
-
-                &:hover{ background-color: $colorfondo2;}
-            }
-}
-   /*version tablet*/
+        /*version tablet*/
 
    @media screen and (max-width: 768px){
     .headerIntro h2 { display:none;}   

@@ -48,7 +48,7 @@ main{background-color: $colorfondo2;}
 }
 
 #gridArea{ 
-    background-color:$colorfondo;
+    background-color:$colorfondoverde;
     display: grid;
     grid-template-areas:
     "carrousel carrousel"
@@ -59,9 +59,7 @@ main{background-color: $colorfondo2;}
     place-items: center;
 } 
 .carrousel{
-    grid-area: carrousel;
-    border: 2px rgb(240, 8, 240) solid;
-}
+    grid-area: carrousel;}
 .novedades{
     grid-area: novedades;
     display: inline-block;
@@ -75,6 +73,8 @@ main{background-color: $colorfondo2;}
     padding: 10px;
 }
 
+.section-contacto , fieldset {background-color: $colorfondoverde;}
+
 
 /*version celu*/
 @media screen and (max-width: 425px){
@@ -85,3 +85,4 @@ main{background-color: $colorfondo2;}
                
             .carrousel, .maps {display: none;} 
 }
+
