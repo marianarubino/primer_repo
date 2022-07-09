@@ -2,9 +2,9 @@ footer {
     background-color: $colorfondoverde;
     height: 100px;
     text-align: center;
+    padding: 5px;
     .logoFooter{
-        inline-size: 10%;
-        margin-top: 10px;
+        inline-size: 8%;
     }
     p{
         display: inline;
@@ -14,7 +14,7 @@ footer {
         }
 /*version tablet*/
 
-   @media screen and (max-width: 768px){}
+   @media screen and (max-width: 768px){.logoFooter {display:none}}
 
  /*version celu*/
  @media screen and (max-width: 425px){

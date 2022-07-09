@@ -6,29 +6,19 @@
 .tarjetaContacto{
     margin: 15px;
     padding: 10px;
-    height: 250px;
+    height: 300px;
+    width: 250px;
+    color:rgba(5, 5, 5, 0.65)
 }
-
-.textoTarjetaRed{
-    @extend .tarjetaContacto;
-    color: red;
-}
-.textoTarjetaWhite{
-    @extend .tarjetaContacto;
-    color: white;
-    
-}
-.textoTarjetaYellow{
-    @extend .tarjetaContacto;
-    color: yellowgreen;
-           
+.productoDecoracion{
+    width: 200px;
+    height: 200px;
 }
 @mixin fontsize($size,$weight){
     font-size: $size;
     font-weight: $weight;
 }
 .letraPequeña{
-    @include fontsize(10px,10px)}
-.letraGrande{  
-    @include fontsize(20px,30px)}
+    @include fontsize(20px,10px)}
+
  

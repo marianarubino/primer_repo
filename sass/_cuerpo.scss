@@ -16,14 +16,11 @@ main{background-color: $colorfondo2;}
     display: inline-block;
 }
 
-.productoJugueteConejo,.productoJugueteEncastre,.productoJugueteDomino {
+.productoJuguetes, .productoDeco1 {
     width: $anchofotoproducto;
-    height: 200px;}
+    height: 200px;
+    margin: 3px;}
  
-
-.productoBaberoNordico1,.productoSonajeroCaballo, .productoSonajeroMadera, .productoSouvenir2, .productoDeco1 {
-    width: $anchofotoproducto;
-    height: 200px;}
 
 .logoInstagram {
     width: 40px;
@@ -59,7 +56,11 @@ main{background-color: $colorfondo2;}
     place-items: center;
 } 
 .carrousel{
-    grid-area: carrousel;}
+    grid-area: carrousel;
+    .foto-carrousel{
+        width: 400px;
+        height: 500px;
+    }}
 .novedades{
     grid-area: novedades;
     display: inline-block;

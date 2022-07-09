@@ -66,13 +66,10 @@ main {
 .producto {
   display: inline-block; }
 
-.productoJugueteConejo, .productoJugueteEncastre, .productoJugueteDomino {
+.productoJuguetes, .productoDeco1 {
   width: 200px;
-  height: 200px; }
-
-.productoBaberoNordico1, .productoSonajeroCaballo, .productoSonajeroMadera, .productoSouvenir2, .productoDeco1 {
-  width: 200px;
-  height: 200px; }
+  height: 200px;
+  margin: 3px; }
 
 .logoInstagram {
   width: 40px;
@@ -104,6 +101,9 @@ main {
 
 .carrousel {
   grid-area: carrousel; }
+  .carrousel .foto-carrousel {
+    width: 400px;
+    height: 500px; }
 
 .novedades {
   grid-area: novedades;
@@ -134,41 +134,38 @@ main {
   justify-content: center;
   align-items: center; }
 
-.tarjetaContacto, .textoTarjetaRed, .textoTarjetaWhite, .textoTarjetaYellow {
+.tarjetaContacto {
   margin: 15px;
   padding: 10px;
-  height: 250px; }
+  height: 300px;
+  width: 250px;
+  color: rgba(5, 5, 5, 0.65); }
 
-.textoTarjetaRed {
-  color: red; }
-
-.textoTarjetaWhite {
-  color: white; }
-
-.textoTarjetaYellow {
-  color: yellowgreen; }
+.productoDecoracion {
+  width: 200px;
+  height: 200px; }
 
 .letraPequeña {
-  font-size: 10px;
-  font-weight: 10px; }
-
-.letraGrande {
   font-size: 20px;
-  font-weight: 30px; }
+  font-weight: 10px; }
 
 footer {
   background-color: #abebc284;
   height: 100px;
-  text-align: center; }
+  text-align: center;
+  padding: 5px; }
   footer .logoFooter {
-    inline-size: 10%;
-    margin-top: 10px; }
+    inline-size: 8%; }
   footer p {
     display: inline;
     margin-left: 10px;
     margin-right: 10px; }
 
 /*version tablet*/
+@media screen and (max-width: 768px) {
+  .logoFooter {
+    display: none; } }
+
 /*version celu*/
 @media screen and (max-width: 425px) {
   .logoFooter {
