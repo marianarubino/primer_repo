@@ -11,12 +11,13 @@
 body {
   display: grid;
   grid-template-rows: auto 1fr auto;
-  grid-template-areas: "header" "main" "footer"; }
+  grid-template-areas: "header" "main" "footer";
+  height: 100vh; }
 
 header {
   padding-top: 5%;
   padding-bottom: 5%;
-  background-color: #abebe694;
+  background-color: #abebe287;
   background-image: radial-gradient(circle, #abebc2 73%, rgba(159, 215, 179, 0.815586) 100%); }
 
 img {
@@ -27,7 +28,7 @@ h1 {
   font: size 80%; }
 
 Nav {
-  background-color: #abebe694; }
+  background-color: #abebe287; }
 
 /*version tablet*/
 @media screen and (max-width: 768px) {
@@ -37,7 +38,7 @@ Nav {
 /*version celu*/
 @media screen and (max-width: 425px) {
   .gridArea1 {
-    font-size: 20%; }
+    font-size: 12%; }
   .logoheader {
     justify-items: center; }
   .logoheaderinicio {
@@ -51,7 +52,10 @@ Nav {
     font-size: 20%; } }
 
 main {
-  background-color: #abebe694; }
+  background-color: #abebe287;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
 
 .novedadesImg {
   width: 300px;
@@ -155,7 +159,7 @@ footer {
   text-align: center;
   padding: 5px; }
   footer .logoFooter {
-    inline-size: 8%; }
+    width: 100px; }
   footer p {
     display: inline;
     margin-left: 10px;

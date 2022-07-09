@@ -2,8 +2,7 @@ body{
     display: grid;
     grid-template-rows: auto 1fr auto;
     grid-template-areas: "header" "main" "footer";
-        
-    
+    height: 100vh;
 }
 
 header{
@@ -28,7 +27,7 @@ Nav{ background-color: $colorfondo2;}
 
 
 @media screen and (max-width: 425px){
-    .gridArea1 {font-size: 20%;}
+    .gridArea1 {font-size: 12%;}
     .logoheader {justify-items: center;}
     .logoheaderinicio {padding: 8px;}
     .headerIntro h1, .headerIntro h2, .headerIntro h3 { display:none;}

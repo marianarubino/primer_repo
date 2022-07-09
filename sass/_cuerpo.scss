@@ -1,4 +1,7 @@
-main{background-color: $colorfondo2;}
+main{background-color: $colorfondo2;
+display: flex;
+flex-direction: column;
+justify-content: center;}
 
 
 
