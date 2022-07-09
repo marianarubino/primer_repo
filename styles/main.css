@@ -38,7 +38,7 @@ Nav {
 /*version celu*/
 @media screen and (max-width: 425px) {
   .gridArea1 {
-    font-size: 12%; }
+    font-size: 12px; }
   .logoheader {
     justify-items: center; }
   .logoheaderinicio {
@@ -142,8 +142,7 @@ main {
   margin: 15px;
   padding: 10px;
   height: 300px;
-  width: 250px;
-  color: rgba(5, 5, 5, 0.65); }
+  width: 250px; }
 
 .productoDecoracion {
   width: 200px;
@@ -152,6 +151,10 @@ main {
 .letraPequeña {
   font-size: 20px;
   font-weight: 10px; }
+
+@media screen and (max-width: 768px) {
+  .cards {
+    flex-direction: column; } }
 
 footer {
   background-color: #abebc284;
