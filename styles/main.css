@@ -68,7 +68,8 @@ main {
   height: 200px; }
 
 .producto {
-  display: inline-block; }
+  flex-direction: column;
+  justify-content: center; }
 
 .productoJuguetes, .productoDeco1 {
   width: 200px;
